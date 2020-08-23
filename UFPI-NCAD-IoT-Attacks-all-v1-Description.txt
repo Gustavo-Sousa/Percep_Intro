@@ -1,0 +1,31 @@
+FIELD | DESCRIPTION | TYPE
+frame.time_delta | Time difference compared to the previous captured packet | timestamp
+frame.time_epoch | Full time in the form of timestamp  | timestamp
+frame.time_relative | Time since the first package was sent  | timestamp
+ipv6.plen | IPv6 Payload length  | numerical, 2 bytes
+ipv6.nxt | Next Header  | numerical, 1 byte
+ipv6.src | Source IPv6 address | nominal-categorical
+ipv6.dst | Destination IPv6 address | nominal-categorical
+tcp.srcport | Source Port | numerical, 2 bytes
+tcp.dstport | Destination Port | numerical, 2 bytes
+eth.src | Source MAC address| nominal-categorical
+eth.dst | Destination MAC address | nominal-categorical
+frame.len | Frame length   | numerical, 4 bytes
+frame.number | Frame number   | numerical, 4 bytes
+mqtt.clientid | Client ID | nominal-categorical
+mqtt.dupflag | Duplicate message flag  | boolean 
+mqtt.hdrflags | Header flags | numerical, 1 byte
+mqtt.kalive | Keep Alive | numerical, 2 bytes
+mqtt.len | Message length mqtt | numerical, 8 bytes
+mqtt.msg | Topic content | nominal-categorical
+mqtt.msgid | Message ID | numerical, 2 bytes
+mqtt.msgtype | Message type mqtt | numerical, 1 byte
+mqtt.passwd | Password | nominal-categorical
+mqtt.qos | QoS level | numerical, 1 byte
+mqtt.retain | If the message is retained for a period | boolean 
+mqtt.topic | Topic name | nominal-categorical
+mqtt.topic_len | Topic content size | numerical, 2 bytes
+mqtt.username | Username | nominal-categorical
+mqtt.willmsg | Retained topic content | nominal-categorical
+mqtt.willtopic | Topic name retained  | nominal-categorical
+label | class | nominal-categorical
